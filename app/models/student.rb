@@ -17,6 +17,16 @@ class Student
     end
 
     def grade_percentage
+        #take BoatingTest class, find all the tests from this student
+        student_tests = BoatingTest.all.find_all{|test| test.student.first_name == self.first_name}
+        #count the number of tests from this student (&& convert to float number)
+        total_tests = student_tests.length.to_f
+        #take the student_tests array, find all the tests this student passed, save to total_passed array
+        total_passed = student_tests.find_all{|test| test.test_status == "passed"}
+        #count the number of passed tests from this student
+        num_passed = total_passed.length.to_f
+        # divide the number of ALL tests by the number of PASSED tests
+        percent = (num_passed/total_tests)*100
     end
 
     def self.all
