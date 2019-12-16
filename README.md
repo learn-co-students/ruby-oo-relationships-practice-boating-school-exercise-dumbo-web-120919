@@ -8,7 +8,7 @@ Associations:
 
 [chart]: https://curriculum-content.s3.amazonaws.com/module-1/ruby-oo-relationships/practice-boating-school-exercise/Image_123_00BoatingSchool.png
 
-`Student` class:
+`Student` class: 
 * should initialize with `first_name`
 * `Student.all` should return all of the student instances
 * `Student#add_boating_test` should initialize a new boating test with a Student (Object), a boating test name (String), a boating test status (String), and an Instructor (Object)

@@ -18,6 +18,10 @@ class Student
         self.all.find {|n| n.first_name == student_name}
     end
 
+    def 
+
+    end
+    
     def self.all
         @@all
     end
